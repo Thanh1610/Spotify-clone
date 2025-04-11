@@ -3,7 +3,7 @@ import Library from './Library';
 
 function MainLayout({ children }) {
     return (
-        <div>
+        <div className="min-h-screen p-2">
             <Header />
             <div>
                 <Library />

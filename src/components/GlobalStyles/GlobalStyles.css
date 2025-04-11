@@ -1,14 +1,13 @@
-@import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import 'tailwindcss';
 
 :root {
     --primary-color: #1abc54;
-    --text-color: #b3b3b3;
-    --black-color: #000;
-    --white-color: #fff;
+    --text: #b3b3b3;
+    --bg: #1f1f1f;
 
     --font-family: 'Nunito', sans-serif;
-    --scrollbar-color: rgba(255, 255, 255, 0.3);
+    --scrollbar: rgba(255, 255, 255, 0.3);
 }
 
 * {
@@ -43,4 +42,8 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     background-color: var(--scrollbar-color);
     border-radius: 4px;
+}
+
+.btn-hover-scale {
+    @apply transition-transform hover:scale-[1.04];
 }
