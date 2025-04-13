@@ -2,9 +2,12 @@
 @import 'tailwindcss';
 
 :root {
-    --primary-color: #1abc54;
-    --text: #b3b3b3;
+    --primary: #1abc54;
     --bg: #1f1f1f;
+    --bg-hover: #2a2a2a;
+    --text: #b3b3b3;
+    --white: #fff;
+    --black: #000;
 
     --font-family: 'Nunito', sans-serif;
     --scrollbar: rgba(255, 255, 255, 0.3);
@@ -32,18 +35,25 @@ button {
     outline: none;
 }
 
+.btn-hover-scale {
+    @apply transition-transform hover:scale-[1.04];
+}
+
 html::-webkit-scrollbar {
     display: none;
 }
 
-body::-webkit-scrollbar {
-    width: 8px;
+html {
+    scrollbar-color: hsla(0, 0%, 100%, 0.3) transparent;
+    scrollbar-width: auto;
 }
-body::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-color);
-    border-radius: 4px;
+::-webkit-scrollbar {
+    width: 16px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 100%, 0.3);
 }
 
-.btn-hover-scale {
-    @apply transition-transform hover:scale-[1.04];
+body::-webkit-scrollbar {
+    display: none;
 }

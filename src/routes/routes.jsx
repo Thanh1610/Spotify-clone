@@ -9,7 +9,7 @@ export const publicRoutes = [
     { path: config.routes.home, component: Home },
     { path: config.routes.explore, component: Explore },
     { path: config.routes.download, component: DownLoad },
-    { path: config.routes.Feed, component: ContentFeed },
+    { path: config.routes.feed, component: ContentFeed },
     { path: config.routes.profile, component: Profile },
 ];
 
